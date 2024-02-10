@@ -1,0 +1,30 @@
+<html>
+<head>
+     <title>Web Technology</title>
+</head>
+<body>
+<body style="background-color:powderblue;">
+ 
+<h1>My First Heading</h1>
+<h2>My Second Heading</h2>
+<h3>My Third Heading</h3>
+<h4>My Fourth Heading</h4>
+<h5>My Fifth Heading</h5>
+<h6>My Sixth Heading</h6>
+<style>
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+</style>
+</body>
+</html>

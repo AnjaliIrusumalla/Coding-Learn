@@ -1,0 +1,43 @@
+#include<stdio.h>
+//#include<string.h>
+void main()
+{
+	int a[20],b[20],i,j,k,count,n;
+	printf("Enter The length:-");
+	scanf("%d",&n);
+	printf("Enter values which are o's and 1's");
+	for(i=0;i<n;i++)
+	scanf("%d",&a[i]);
+	i=0;
+	count=1;
+	j=0;
+	while(i<n)
+	{
+		if(a[i]==1)
+		{
+			b[j]=a[i];
+			for(k=i+1;a[k]==1 && k<n && count<5;k++)
+			{
+				j++;
+				b[j]=a[k];
+				count++;
+				if(count==3)
+				{
+					j++;
+					b[j]=0;
+					
+				}
+				i=k;
+			}
+		}
+		else
+		{
+			b[j]=a[i];
+		}
+		i++;
+		j++;
+	}
+	printf("After stuffing:-");
+	for(i=0;i<j;i++)
+	printf("%d",b[i]);
+}
